@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+*,*::before , *::after {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0px;
+  /* overflow-x: hidden; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
+}
+.logo{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34;
+  height: 20vh;
+}
+.logo-text{
+  font-size: 50px;
+  /* margin-bottom: 50px; */
+}
+.action{
+  float: right;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.action :hover {
+  color: wheat;
+}
+.content{
+  margin-top: 50px;
+}
+.currencyContainer{
+  display: grid;
+  /* column-gap: 10px; */
+  grid-template-columns: auto auto auto auto auto;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  /* background-color: rgb(65, 18, 18); */
+}
+.eye{
+  margin-left: 50px;
+  /* margin-left: 20px; */
 }
 
-.App-link {
-  color: #61dafb;
+.eye .last{
+  margin-right: 10px;
 }
+.margin{
+  border-left: 2.5px solid green;
+  /* border: 1px solid black; */
+  /* width: 0%; */
+  height: auto;
+  margin: 10px 0px;
+}
+.optionCurrencies{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.someInfo{
+  margin-top: 35px;
+}
+.dropList{
+  color: gray;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 0px;
+  outline: 0px;
+  width: 250px;
+  /* outline: 1px ridge rgba(2, 0, 3, 0.6); */
+  /* border-radius: 2rem; */
 }
